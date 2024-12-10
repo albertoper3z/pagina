@@ -36,8 +36,8 @@ header h1 {
 
 /* Imágenes de los botones */
 .contenedor-botones img {
-    width: 100px;
-    height: 100px;
+    width: 500px;
+    height: 500px;
     border-radius: 10px;
     cursor: pointer;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
