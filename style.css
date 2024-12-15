@@ -7,7 +7,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #FFFFFF;
     color: #333;
     display: flex;
     flex-direction: column;
@@ -19,7 +19,7 @@ body {
 /* Estilo del encabezado */
 header h1 {
     margin-bottom: 20px;
-    color: #0078d4;
+    color: #00FF09;
     text-align: center;
 }
 
@@ -36,8 +36,8 @@ header h1 {
 
 /* Imágenes de los botones */
 .contenedor-botones img {
-    width: 500px;
-    height: 500px;
+    width: 250px;
+    height: auto;
     border-radius: 10px;
     cursor: pointer;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
