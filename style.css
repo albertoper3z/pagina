@@ -32,6 +32,8 @@ header h1 {
     align-items: center;
     width: 100%;
     max-width: 600px;
+    adding: 30px 40px;
+    margin: 20px;
 }
 
 /* Imágenes de los botones */
