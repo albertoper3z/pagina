@@ -25,7 +25,7 @@ header h1 {
 
 /* Contenedor de botones */
 .contenedor-botones {
-    display: flex;
+    display: inline-block;
     flex-wrap: wrap;
     gap: 20px; /* Espaciado entre botones */
     justify-content: center;
