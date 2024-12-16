@@ -16,8 +16,20 @@
             font-size:14px;
             margin-bottom: 10px;
         }
-        a{
-            font-color:#b0b0b0;
+        a {
+            text-decoration: none; /* Quitar subrayado */
+            color: #ffffff; /* Color del texto */
+            background-color: #313a59; /* Color de fondo */
+            padding: 10px 20px; /* Espaciado interno */
+            border-radius: 5px; /* Bordes redondeados */
+            box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2); /* Sombra */
+            font-weight: bold; /* Texto en negrita */
+            transition: all 0.3s ease; /* Transición suave para efectos */
+        }
+        a:hover {
+            background-color: #ba8c65; /* Cambiar fondo al pasar el ratón */
+            box-shadow: 4px 8px 10px rgba(0, 0, 0, 0.3); /* Sombra más fuerte */
+            transform: translateY(-2px); /* Efecto de levantamiento */
         }
         body{background: linear-gradient(145deg, #ba8c65,#313a59);
         }
