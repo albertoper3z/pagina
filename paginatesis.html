@@ -31,6 +31,28 @@
             box-shadow: 4px 8px 10px rgba(0, 0, 0, 0.3); /* Sombra más fuerte */
             transform: translateY(-2px); /* Efecto de levantamiento */
         }
+        /* Botón oscuro */
+        .button-dark {
+            background-color: #313a59;
+            box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2);
+        }
+        .button-dark:hover {
+            background-color: #ba8c65;
+            box-shadow: 4px 8px 10px rgba(0, 0, 0, 0.3);
+            transform: translateY(-2px);
+        }
+        /* Botón claro */
+        .button-light {
+            background-color: #ba8c65;
+            color: #313a59;
+            box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2);
+        }
+        .button-light:hover {
+            background-color: #ffffff;
+            color: #ba8c65;
+            box-shadow: 4px 8px 10px rgba(0, 0, 0, 0.3);
+            transform: translateY(-2px);
+        }
         body{background: linear-gradient(145deg, #ba8c65,#313a59);
         }
         footer {
@@ -48,8 +70,8 @@
         <embed src="TESIS-JesusAlbertoPerezVargas.pdf" type="application/pdf" width="98%" height="730px">
     </body>
 
-    <a href="https://albertoper3z.com" target="_blank">Pagina principal</a>  
-    <footer>
+    <a href="https://albertoper3z.com" target="_blank" class="button button-light">Pagina principal</a>  
+    <footer> 
     <p>&copy; 2024 Alberto Perez/ UABC. Todos los derechos reservados.</p>
 </footer> 
 </html>
