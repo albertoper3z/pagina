@@ -38,7 +38,9 @@
 
         /* Estilos de los enlaces */
         a {
-            display: inline-block;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             margin: 10px 0;
             color: #fdbb2d;
             text-decoration: none;
@@ -56,6 +58,12 @@
             color: #222;
             transform: translateY(-3px);
             box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+        }
+
+        /* Imágenes dentro de los botones */
+        a img {
+            height: 25px;
+            margin-right: 10px;
         }
 
         /* Estilo de "Próximamente" */
@@ -90,13 +98,34 @@
 <body>
     <div class="container">
         <h1>PRINZ: Música</h1>
-        <a href="https://open.spotify.com/artist/6JW48N0ND6M1L81R3rW7Iy?si=xwNv3m4vSYqrB942FqR1Vw" target="_blank">SPOTIFY</a>
-        <a href="https://www.youtube.com/@albertoprinzper3z/videos" target="_blank">YOUTUBE</a>
-        <a href="https://music.amazon.com.mx/albums/B0DGZLPDR3?marketplaceId=A1AM78C64UM0Y8&musicTerritory=MX&ref=dm_sh_aZM6LCegtAqBYXErjovbEKI9B" target="_blank">AMAZON MUSIC</a>
-        <a href="https://deezer.page.link/Apd47mYGYHUquMT88" target="_blank">DEEZER</a>
-        <a href="https://music.apple.com/mx/album/aporias/1768288437?l=en-GB" target="_blank">APPLE MUSIC</a>
-        <a href="https://music.youtube.com/playlist?list=OLAK5uy_niPclq68WdQHUnD4mVTCOmNFpoDFtANu8&si=nGNkiqURRBzaq-Lw" target="_blank">YOUTUBE MUSIC</a>
-        <a class="coming-soon" href="#" onclick="alert('¡Próximamente disponible!')">Nueva Música</a>
+        <a href="https://open.spotify.com/artist/6JW48N0ND6M1L81R3rW7Iy?si=xwNv3m4vSYqrB942FqR1Vw" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/2/26/Spotify_logo_with_text.svg" alt="Spotify Logo">
+            SPOTIFY
+        </a>
+        <a href="https://www.youtube.com/@albertoprinzper3z/videos" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/YouTube_Logo_2017.svg" alt="YouTube Logo">
+            YOUTUBE
+        </a>
+        <a href="https://music.amazon.com.mx/albums/B0DGZLPDR3?marketplaceId=A1AM78C64UM0Y8&musicTerritory=MX&ref=dm_sh_aZM6LCegtAqBYXErjovbEKI9B" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/d/dd/Amazon_Music_logo.svg" alt="Amazon Music Logo">
+            AMAZON MUSIC
+        </a>
+        <a href="https://deezer.page.link/Apd47mYGYHUquMT88" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/Deezer_logo.svg" alt="Deezer Logo">
+            DEEZER
+        </a>
+        <a href="https://music.apple.com/mx/album/aporias/1768288437?l=en-GB" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/d/d1/Apple_Music_logo.svg" alt="Apple Music Logo">
+            APPLE MUSIC
+        </a>
+        <a href="https://music.youtube.com/playlist?list=OLAK5uy_niPclq68WdQHUnD4mVTCOmNFpoDFtANu8&si=nGNkiqURRBzaq-Lw" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/e/e1/YouTube_Music_logo.svg" alt="YouTube Music Logo">
+            YOUTUBE MUSIC
+        </a>
+        <a class="coming-soon" href="#" onclick="alert('¡Próximamente disponible!')">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/59/Music_note_icon.svg" alt="Music Icon">
+            NUEVA MÚSICA
+        </a>
         <a class="footer-link" href="index.html">Volver a la página principal</a>
     </div>
 </body>
