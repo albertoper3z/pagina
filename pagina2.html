@@ -31,4 +31,88 @@
 
         /* Título */
         h1 {
-            font-size
+            font-size: 2.5rem;
+            color: #fdbb2d;
+            margin-bottom: 10px;
+        }
+
+        /* Mensaje de apoyo */
+        p.message {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            color: #ddd;
+        }
+
+        /* Enlaces a redes sociales */
+        .social-links {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .social-links a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 140px;
+            padding: 10px;
+            border-radius: 8px;
+            background: #444;
+            color: #fdbb2d;
+            text-decoration: none;
+            font-size: 1rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            transition: all 0.3s ease-in-out;
+        }
+
+        .social-links a img {
+            width: 30px;
+            margin-right: 10px;
+        }
+
+        .social-links a:hover {
+            background: #fdbb2d;
+            color: #222;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+        }
+
+        /* Pie de página */
+        footer {
+            margin-top: 20px;
+            color: #aaa;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Sígueme y Apóyame</h1>
+        <p class="message">Tu apoyo significa mucho para mí. Sígueme en mis redes sociales o apóyame en Patreon para seguir creando contenido de calidad.</p>
+        <div class="social-links">
+            <!-- Twitch -->
+            <a href="https://www.twitch.tv/tuusuario" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/3/31/Twitch_Logo_2019.svg" alt="Twitch Logo">
+                Twitch
+            </a>
+            <!-- YouTube -->
+            <a href="https://www.youtube.com/tuusuario" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube Logo">
+                YouTube
+            </a>
+            <!-- Instagram -->
+            <a href="https://www.instagram.com/tuusuario" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Instagram_logo_2022.svg" alt="Instagram Logo">
+                Instagram
+            </a>
+            <!-- Patreon -->
+            <a href="https://www.patreon.com/tuusuario" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/5/5a/Patreon_logomark.svg" alt="Patreon Logo">
+                Patreon
+            </a>
+        </div>
+        <footer>&copy; 2024 PRINZ. ¡Gracias por tu apoyo!</footer>
+    </div>
+</body>
+</html>
