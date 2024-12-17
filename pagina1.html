@@ -81,6 +81,24 @@
         </div>
 
         <p>Si no puedes donar, ¡también nos ayudas compartiendo nuestro trabajo con tus amigos y familiares!</p>
+   
+     <script>
+        // Obtener el contador actual desde localStorage
+        let visitCount = localStorage.getItem('visitCount');
+
+        // Si no existe, inicializamos el contador
+        if (visitCount === null) {
+            visitCount = 1;
+        } else {
+            visitCount = parseInt(visitCount) + 1;
+        }
+
+        // Guardar el nuevo valor en localStorage
+        localStorage.setItem('visitCount', visitCount);
+
+        // Mostrar el valor en la página
+        document.getElementById('visit-counter').innerText = visitCount;
+    </script>
     </div>
 </body>
 </html>
