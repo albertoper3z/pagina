@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PRINZ</title>
+    <title>PRINZ - Redes Sociales</title>
     <style>
         /* Estilos generales */
         body {
@@ -36,40 +36,39 @@
             color: #fdbb2d;
         }
 
-        /* Estilos de los enlaces */
-        a {
-            display: inline-block;
-            margin: 10px 0;
-            color: #fdbb2d;
-            text-decoration: none;
-            font-size: 1.2rem;
-            padding: 10px 20px;
-            border-radius: 5px;
-            background: #444;
-            transition: all 0.3s ease-in-out;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        /* Enlaces a redes */
+        .social-links {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
         }
 
-        /* Efectos al pasar el ratón */
-        a:hover {
+        .social-links a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 120px;
+            padding: 10px;
+            border-radius: 5px;
+            background: #444;
+            color: #fdbb2d;
+            font-size: 1rem;
+            text-decoration: none;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease-in-out;
+        }
+
+        .social-links a:hover {
             background: #fdbb2d;
             color: #222;
             transform: translateY(-3px);
             box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
         }
 
-        /* Estilo de "Próximamente" */
-        .coming-soon {
-            background: #555;
-            color: #999;
-            cursor: not-allowed;
-        }
-
-        .coming-soon:hover {
-            background: #555;
-            color: #ccc;
-            transform: none;
-            box-shadow: none;
+        .social-links img {
+            width: 24px;
+            margin-right: 10px;
         }
 
         /* Pie de página */
@@ -89,14 +88,33 @@
 </head>
 <body>
     <div class="container">
-        <h1>PRINZ: Música</h1>
-        <a href="https://open.spotify.com/artist/6JW48N0ND6M1L81R3rW7Iy?si=xwNv3m4vSYqrB942FqR1Vw" target="_blank">SPOTIFY</a>
-        <a href="https://www.youtube.com/@albertoprinzper3z/videos" target="_blank">YOUTUBE</a>
-        <a href="https://music.amazon.com.mx/albums/B0DGZLPDR3?marketplaceId=A1AM78C64UM0Y8&musicTerritory=MX&ref=dm_sh_aZM6LCegtAqBYXErjovbEKI9B" target="_blank">AMAZON MUSIC</a>
-        <a href="https://deezer.page.link/Apd47mYGYHUquMT88" target="_blank">DEEZER</a>
-        <a href="https://music.apple.com/mx/album/aporias/1768288437?l=en-GB" target="_blank">APPLE MUSIC</a>
-        <a href="https://music.youtube.com/playlist?list=OLAK5uy_niPclq68WdQHUnD4mVTCOmNFpoDFtANu8&si=nGNkiqURRBzaq-Lw" target="_blank">YOUTUBE MUSIC</a>
-        <a class="coming-soon" href="#" onclick="alert('¡Próximamente disponible!')">Nueva Música</a>
+        <h1>PRINZ: Redes Sociales</h1>
+        <div class="social-links">
+            <a href="https://www.facebook.com/tuusuario" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6c/Facebook_Logo_2023.png" alt="Facebook">
+                Facebook
+            </a>
+            <a href="https://www.instagram.com/tuusuario" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Instagram_logo_2022.svg" alt="Instagram">
+                Instagram
+            </a>
+            <a href="https://www.twitter.com/tuusuario" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Logo_of_Twitter.svg" alt="Twitter">
+                Twitter
+            </a>
+            <a href="https://www.tiktok.com/@tuusuario" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/en/a/a9/TikTok_logo.svg" alt="TikTok">
+                TikTok
+            </a>
+            <a href="https://www.youtube.com/@tuusuario" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube">
+                YouTube
+            </a>
+            <a href="https://open.spotify.com/artist/tuusuario" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/2/26/Spotify_logo_with_text.svg" alt="Spotify">
+                Spotify
+            </a>
+        </div>
         <a class="footer-link" href="index.html">Volver a la página principal</a>
     </div>
 </body>
