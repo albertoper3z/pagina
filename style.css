@@ -25,14 +25,14 @@ header h1 {
 
 /* Contenedor de botones */
 .contenedor-botones {
-    display: inline-block;
+    display: flex;
     flex-wrap: wrap;
     gap: 20px; /* Espaciado entre botones */
     justify-content: center;
     align-items: center;
     width: 100%;
     max-width: 600px;
-    adding: 30px 40px;
+    padding: 30px 40px;
     margin: 20px;
 }
 
