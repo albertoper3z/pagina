@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejemplo con eventos</title>
+    <title>Ejemplo con TensorFlow.js</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -38,18 +38,31 @@
             background-color: #003d80;
         }
     </style>
+    <!-- Cargar TensorFlow.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
 </head>
 <body>
     <h1 id="titulo">Hola, Mundo</h1>
-    <button id="boton">Haz clic</button>
+    <button id="boton">Haz clic para ver TensorFlow.js</button>
+    <div id="resultado"></div>
 
     <script>
-        document.getElementById("boton").addEventListener("click", function() {
+        document.getElementById("boton").addEventListener("click", async function() {
             const titulo = document.getElementById("titulo");
-            titulo.textContent = "¡Has cambiado el texto!";
-            titulo.style.color = "red"; // Cambiar color del texto
-            titulo.style.fontSize = "2.5rem"; // Cambiar tamaño del texto
+            titulo.textContent = "TensorFlow.js en acción";
+
+            // Crear un tensor
+            const tensor = tf.tensor([1, 2, 3, 4]);
+
+            // Realizar una operación matemática (sumar 1 a cada valor)
+            const resultado = tensor.add(tf.scalar(1));
+
+            // Mostrar los resultados
+            document.getElementById("resultado").textContent = 
+                "Tensor original: " + tensor.toString() + 
+                "\nResultado tras sumar 1: " + resultado.toString();
         });
     </script>
 </body>
 </html>
+
