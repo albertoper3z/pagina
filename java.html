@@ -4,10 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejemplo con eventos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f0f8ff;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        #boton {
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background-color: #007BFF;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        #boton:hover {
+            background-color: #0056b3;
+            transform: scale(1.1);
+        }
+
+        #boton:active {
+            background-color: #003d80;
+        }
+    </style>
 </head>
 <body>
     <h1 id="titulo">Hola, Mundo</h1>
     <button id="boton">Haz clic</button>
-    <script src="script.js"></script>
+
+    <script>
+        document.getElementById("boton").addEventListener("click", function() {
+            const titulo = document.getElementById("titulo");
+            titulo.textContent = "¡Has cambiado el texto!";
+            titulo.style.color = "red"; // Cambiar color del texto
+            titulo.style.fontSize = "2.5rem"; // Cambiar tamaño del texto
+        });
+    </script>
 </body>
 </html>
